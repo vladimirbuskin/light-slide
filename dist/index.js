@@ -17,8 +17,6 @@ function slide({
   var draggingX = false;
   var draggingY = false;
 
-  alert(1);
-
   function tStart(ev) {
     touchEnd = touchStart = getTouchCoords(ev);
 
