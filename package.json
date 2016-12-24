@@ -7,10 +7,13 @@
     "slideout": "^1.0.1"
   },
   "devDependencies": {
-    "babelify": "^7.3.0"
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "concurrently": "^3.1.0",
+    "watchify": "^3.8.0"
   },
   "scripts": {
-    "start": "http-server -c1",
+    "start": "concurrently --kill-others \"watchify index.js -v -s lightSlide -o dist/index.js\" \"http-server -c1\"",
     "build": "browserify index.js -s lightSlide -o dist/index.js",
     "install": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -12,11 +12,12 @@ function slide({
 
   // panel touch start position
   var panStart = [];
-
+ 
   // dragging flags
   var draggingX = false;
   var draggingY = false;
 
+  alert(1);
 
   function tStart(ev) {
     touchEnd = touchStart = getTouchCoords(ev);
