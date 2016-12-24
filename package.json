@@ -1,0 +1,20 @@
+{
+  "name": "light-slide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "slideout": "^1.0.1"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0"
+  },
+  "scripts": {
+    "start": "http-server -c1",
+    "build": "browserify index.js -s lightSlide -o dist/index.js",
+    "install": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
